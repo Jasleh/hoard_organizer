@@ -1,0 +1,7 @@
+package edu.pdx.laurah;
+
+import javax.swing.JFrame;
+
+public class StartWindow extends JFrame {
+
+}

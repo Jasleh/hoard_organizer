@@ -1,0 +1,36 @@
+package edu.pdx.laurah;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class StartWindow extends JFrame 
+{
+	private JButton new_list;
+	private JButton open_list;
+	
+	public StartWindow()
+	{
+		int f_height = 500;
+		int f_width = 500;
+		
+		new_list = new JButton("Create a New List");
+		open_list = new JButton("Open a List");
+		
+		setLayout(null);
+		
+		this.add(new_list);
+		this.add(open_list);
+		this.setSize(f_width, f_height);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setTitle("Hoard Organizer");
+		this.setLocationRelativeTo(null);
+		
+		new_list.setBounds(150, 100, 200, 100);
+		open_list.setBounds(150, 300, 200, 100);
+	}
+	
+	public void run()
+	{
+		this.setVisible(true);
+	}
+}

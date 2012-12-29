@@ -1,0 +1,20 @@
+!SESSION 2012-12-29 10:52:29.645 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lauraherburger/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -product org.eclipse.epp.package.java.product -keyring /Users/lauraherburger/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-12-29 11:03:38.572
+!MESSAGE Failed to open search index.
+!SESSION 2012-12-29 11:35:07.702 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.6.0_31
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lauraherburger/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -product org.eclipse.epp.package.java.product -keyring /Users/lauraherburger/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-12-29 11:35:38.406
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
