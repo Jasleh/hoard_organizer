@@ -14,10 +14,10 @@ public class StartWindow extends JFrame
 	
 	public StartWindow()
 	{
+		f_height = 400;
+		f_width = 300;
 		button_height = 100;
 		button_width = 200;
-		f_height = (int) ((button_height * 2.5) + (button_width/2));
-		f_width = (int) (button_width * 1.5);
 		
 		new_list = new JButton("Create a New List");
 		open_list = new JButton("Open a List");
@@ -32,7 +32,7 @@ public class StartWindow extends JFrame
 		this.setLocationRelativeTo(null);
 		
 		new_list.setBounds((f_width/2)-(button_width/2), (f_width/2)-(button_width/2), button_width, button_height);
-		open_list.setBounds((f_width/2)-(button_width/2), (int) (((f_width/2)-(button_width/2))+(button_height*1.25)), button_width, button_height);
+		open_list.setBounds((f_width/2)-(button_width/2), (int) (((f_width/2)-(button_width/2))+(button_height*1.5)), button_width, button_height);
 	}
 	
 	public void run()

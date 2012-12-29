@@ -32,7 +32,7 @@ public class StartWindow extends JFrame
 		this.setLocationRelativeTo(null);
 		
 		new_list.setBounds((f_width/2)-(button_width/2), (f_width/2)-(button_width/2), button_width, button_height);
-		open_list.setBounds((f_width/2)-(button_width/2), (int) (((f_width/2)-(button_width/2))+(button_height*1.25)), button_width, button_height);
+		open_list.setBounds((f_width/2)-(button_width/2), (int) (((f_width/2)-(button_width/2))+(button_height*1.5)), button_width, button_height);
 	}
 	
 	public void run()
