@@ -39,9 +39,4 @@ public class StartWindow extends JFrame
 	{
 		this.setVisible(true);
 	}
-	
-	public void hide()
-	{
-		this.setVisible(false);
-	}
 }
