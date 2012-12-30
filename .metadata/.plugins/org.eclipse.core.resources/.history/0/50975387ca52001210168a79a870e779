@@ -36,7 +36,6 @@ public class StartWindow extends JFrame
 		public void actionPerformed(ActionEvent e)
 		{
 			// new button stub
-			JOptionPane.showMessageDialog(null, "test new");
 		}
 	};
 	
@@ -45,13 +44,12 @@ public class StartWindow extends JFrame
 		public void actionPerformed(ActionEvent e)
 		{
 			// open button stub
-			JOptionPane.showMessageDialog(null, "test open");
 		}
 	};
 	
 	public StartWindow()
 	{
-		button_height = 50;
+		button_height = 100;
 		button_width = 200;
 		f_height = (int) ((button_height * 2.5) + (button_width/2));
 		f_width = (int) (button_width * 1.5);
@@ -70,7 +68,6 @@ public class StartWindow extends JFrame
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setTitle("Hoard Organizer");
 		this.setLocationRelativeTo(null);
-		this.setResizable(false);
 		
 		new_list.setBounds((f_width/2)-(button_width/2), (f_width/2)-(button_width/2), button_width, button_height);
 		open_list.setBounds((f_width/2)-(button_width/2), (int) (((f_width/2)-(button_width/2))+(button_height*1.25)), button_width, button_height);
