@@ -28,3 +28,37 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86 -product org.eclipse.epp
 
 !ENTRY org.eclipse.core.resources 2 10035 2012-12-29 12:04:10.147
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2013-01-31 18:18:10.056 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.6.0_37
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lauraherburger/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lauraherburger/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-01-31 18:18:19.163
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2013-01-31 18:18:20.707
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2013-01-31 18:18:34.414
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-01-31 18:18:34.414
+!MESSAGE A conflict occurred for F12:
+Binding(F12,
+	ParameterizedCommand(Command(org.eclipse.wb.core.commands.switch,Switch between Source/Design Views,
+		Switch between the Source and Design views.,
+		Category(org.eclipse.wb.core.actions.category,WindowBuilder Pro,WindowBuilder Pro actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2e559e7f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(F12,
+	ParameterizedCommand(Command(org.eclipse.wb.core.commands.switch,Switch between Source/Design Views,
+		Switch between the Source and Design views.,
+		Category(org.eclipse.wb.core.actions.category,WindowBuilder Pro,WindowBuilder Pro actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2e559e7f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)

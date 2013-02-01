@@ -26,9 +26,13 @@ public class HoardOrganizer
 	 */
 	public static void main(String[] args) 
 	{
-		StartWindow st = new StartWindow();
+		StartWindow st;
+		NewListWindow nl;
 		
-		st.run();
+		st = new StartWindow();
+		nl = new NewListWindow();
+		
+		st.setVisible(true);
 	}
 
 }

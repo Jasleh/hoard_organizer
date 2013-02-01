@@ -22,14 +22,14 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class StartWindow extends JFrame 
+public class StartWindow extends JFrame
 {
 	private JButton new_list;
 	private JButton open_list;
-	int f_height;
-	int f_width;
-	int button_height;
-	int button_width;
+	private int f_height;
+	private int f_width;
+	private int button_height;
+	private int button_width;
 	
 	private ActionListener bn = new ActionListener()
 	{
@@ -74,15 +74,5 @@ public class StartWindow extends JFrame
 		
 		new_list.setBounds((f_width/2)-(button_width/2), (f_width/2)-(button_width/2), button_width, button_height);
 		open_list.setBounds((f_width/2)-(button_width/2), (int) (((f_width/2)-(button_width/2))+(button_height*1.25)), button_width, button_height);
-	}
-	
-	public void run()
-	{
-		this.setVisible(true);
-	}
-	
-	public void hide()
-	{
-		this.setVisible(false);
 	}
 }
