@@ -20,15 +20,18 @@ package edu.pdx.laurah;
 
 public class HoardOrganizer 
 {
+	private static StartWindow st;
+	private static NewListWindow nl;
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) 
 	{
-		StartWindow st = new StartWindow();
+		st = new StartWindow();
+		nl = new NewListWindow();
 		
-		st.run();
+		st.setVisible(true);
 	}
 
 }
