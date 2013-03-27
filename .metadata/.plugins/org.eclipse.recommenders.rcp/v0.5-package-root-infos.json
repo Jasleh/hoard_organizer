@@ -7,10 +7,23 @@
       "micro": 0,
       "qualifier": ""
     },
-    "jarFileFingerprint": "2357317d1e1f14937b3bda942c58791ee1dba581",
-    "jarFileModificationDate": "2012-10-04T17:58:00-07:00",
+    "jarFileFingerprint": "c40b948a8103c939a0da54723630db9d4633c350",
+    "jarFileModificationDate": "2013-03-01T17:08:24-08:00",
     "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar",
     "javaRuntime": true
+  },
+  {
+    "symbolicName": "derbyLocale_pt_BR",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f17c31ad4cacafff6104d6a5d3e9419e1ce0bd37",
+    "jarFileModificationDate": "2012-05-31T12:19:24-07:00",
+    "location": "/Users/lauraherburger/db-derby-10.9.1.0-bin/lib/derbyLocale_pt_BR.jar",
+    "javaRuntime": false
   },
   {
     "symbolicName": "jre",
@@ -21,22 +34,22 @@
       "qualifier": ""
     },
     "jarFileFingerprint": "f61f71496ffdd90c7b1af3c651a2223e906508a5",
-    "jarFileModificationDate": "2012-10-04T18:03:35-07:00",
+    "jarFileModificationDate": "2013-03-01T17:14:47-08:00",
     "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar",
     "javaRuntime": true
   },
   {
-    "symbolicName": "jre",
+    "symbolicName": "derbyLocale_hu",
     "version": {
-      "major": 1,
-      "minor": 0,
-      "micro": 0,
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
       "qualifier": ""
     },
-    "jarFileFingerprint": "d611b449a93c1013f13b5022390326ba07e82d0e",
-    "jarFileModificationDate": "2012-10-17T15:07:02-07:00",
-    "location": "/System/Library/Java/Extensions/MRJToolkit.jar",
-    "javaRuntime": true
+    "jarFileFingerprint": "66d1160da6b44dd6e3fefd38f824dc0f81246164",
+    "jarFileModificationDate": "2012-05-31T12:19:22-07:00",
+    "location": "/Users/lauraherburger/db-derby-10.9.1.0-bin/lib/derbyLocale_hu.jar",
+    "javaRuntime": false
   },
   {
     "symbolicName": "jre",
@@ -52,17 +65,30 @@
     "javaRuntime": true
   },
   {
-    "symbolicName": "jre",
+    "symbolicName": "derbyLocale_es",
     "version": {
-      "major": 1,
-      "minor": 0,
-      "micro": 0,
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
       "qualifier": ""
     },
-    "jarFileFingerprint": "efccebe4458cfb77604b9bb20e476666af2889cf",
-    "jarFileModificationDate": "2012-10-04T18:13:19-07:00",
-    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar",
-    "javaRuntime": true
+    "jarFileFingerprint": "26d41c0e74a6d20ca1a0650dff52d4f4585356e2",
+    "jarFileModificationDate": "2012-05-31T12:19:22-07:00",
+    "location": "/Users/lauraherburger/db-derby-10.9.1.0-bin/lib/derbyLocale_es.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "derbyLocale_ru",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b30ed071e85f150e07d66e698861a4f66cc4e0d9",
+    "jarFileModificationDate": "2012-05-31T12:19:24-07:00",
+    "location": "/Users/lauraherburger/db-derby-10.9.1.0-bin/lib/derbyLocale_ru.jar",
+    "javaRuntime": false
   },
   {
     "symbolicName": "jre",
@@ -91,17 +117,17 @@
     "javaRuntime": true
   },
   {
-    "symbolicName": "jre",
+    "symbolicName": "derby",
     "version": {
-      "major": 1,
-      "minor": 0,
-      "micro": 0,
-      "qualifier": ""
+      "major": 10,
+      "minor": 9,
+      "micro": 1000000,
+      "qualifier": "1344872"
     },
-    "jarFileFingerprint": "0e204c45fd2e7cc8abdc457636f34358cc534e60",
-    "jarFileModificationDate": "2012-10-04T17:58:00-07:00",
-    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar",
-    "javaRuntime": true
+    "jarFileFingerprint": "4538cf5564ab3c262eec65c55fdb13965625589c",
+    "jarFileModificationDate": "2012-05-31T12:19:20-07:00",
+    "location": "/Users/lauraherburger/db-derby-10.9.1.0-bin/lib/derby.jar",
+    "javaRuntime": false
   },
   {
     "symbolicName": "jre",
@@ -111,34 +137,8 @@
       "micro": 0,
       "qualifier": ""
     },
-    "jarFileFingerprint": "dba74e353db1e9431910c44265bd85a4fdb675ae",
-    "jarFileModificationDate": "2012-10-04T18:07:11-07:00",
-    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar",
-    "javaRuntime": true
-  },
-  {
-    "symbolicName": "jre",
-    "version": {
-      "major": 1,
-      "minor": 0,
-      "micro": 0,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "4f8da5f0b2561d280a59a4414c59083dec8e0227",
-    "jarFileModificationDate": "2011-07-14T13:44:11-07:00",
-    "location": "/System/Library/Java/Extensions/jai_codec.jar",
-    "javaRuntime": true
-  },
-  {
-    "symbolicName": "jre",
-    "version": {
-      "major": 1,
-      "minor": 0,
-      "micro": 0,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "62d773a0551c5161c8b860290f3457cff4e73da5",
-    "jarFileModificationDate": "2012-10-04T18:13:24-07:00",
+    "jarFileFingerprint": "b8d7c94811c766288d160813f4dc5b5e83c994d3",
+    "jarFileModificationDate": "2013-03-01T17:25:43-08:00",
     "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar",
     "javaRuntime": true
   },
@@ -163,48 +163,9 @@
       "micro": 0,
       "qualifier": ""
     },
-    "jarFileFingerprint": "34699721120eede31b7fe5140226deedc0b2aab9",
-    "jarFileModificationDate": "2011-07-14T12:43:29-07:00",
-    "location": "/System/Library/Java/Extensions/j3daudio.jar",
-    "javaRuntime": true
-  },
-  {
-    "symbolicName": "jre",
-    "version": {
-      "major": 1,
-      "minor": 0,
-      "micro": 0,
-      "qualifier": ""
-    },
     "jarFileFingerprint": "fb93720c7b115135f19f198b7474ce2f656d734c",
     "jarFileModificationDate": "2009-11-30T15:55:58-08:00",
     "location": "/Users/lauraherburger/Library/Java/Extensions/aleksPack10.jar",
-    "javaRuntime": true
-  },
-  {
-    "symbolicName": "jre",
-    "version": {
-      "major": 1,
-      "minor": 0,
-      "micro": 0,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "096c07686702497c46affdf25d6559ac10235884",
-    "jarFileModificationDate": "2011-07-14T13:44:11-07:00",
-    "location": "/System/Library/Java/Extensions/jai_core.jar",
-    "javaRuntime": true
-  },
-  {
-    "symbolicName": "jre",
-    "version": {
-      "major": 1,
-      "minor": 0,
-      "micro": 0,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "48c1ff3d0b4f292426c69973f8b2fa1a104fcc55",
-    "jarFileModificationDate": "2012-10-04T18:11:14-07:00",
-    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar",
     "javaRuntime": true
   },
   {
@@ -228,10 +189,244 @@
       "micro": 0,
       "qualifier": ""
     },
-    "jarFileFingerprint": "04197b5f00f1e62412abf5bd0819480cdb7a419f",
-    "jarFileModificationDate": "2012-10-17T15:07:04-07:00",
-    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar",
+    "jarFileFingerprint": "8218cbf86348599371bdce1bf2ecfccf5593eeb0",
+    "jarFileModificationDate": "2013-03-01T17:18:46-08:00",
+    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar",
     "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "70e3f9e76e3d5884415516c0cee0855295bcb571",
+    "jarFileModificationDate": "2013-03-01T17:08:24-08:00",
+    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7992b711fdf803a855111f68ff8ef083146d8a71",
+    "jarFileModificationDate": "2013-03-09T10:10:41-08:00",
+    "location": "/System/Library/Java/Extensions/MRJToolkit.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "derbyLocale_ko_KR",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ca6858c00ba6acff9bf9cfb90bfe6305fbe7cc02",
+    "jarFileModificationDate": "2012-05-31T12:19:24-07:00",
+    "location": "/Users/lauraherburger/db-derby-10.9.1.0-bin/lib/derbyLocale_ko_KR.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "derbyLocale_zh_CN",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "228342b900a0a004d4e7faab5a06ee69fdd1069b",
+    "jarFileModificationDate": "2012-05-31T12:19:24-07:00",
+    "location": "/Users/lauraherburger/db-derby-10.9.1.0-bin/lib/derbyLocale_zh_CN.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "derbyLocale_ja_JP",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "abe9ab73972131d2c8b07ece3db14dd4738236f5",
+    "jarFileModificationDate": "2012-05-31T12:19:24-07:00",
+    "location": "/Users/lauraherburger/db-derby-10.9.1.0-bin/lib/derbyLocale_ja_JP.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "derbyLocale_de_DE",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5a3256344c58befd6eeeeaa99791d8c92d942b06",
+    "jarFileModificationDate": "2012-05-31T12:19:22-07:00",
+    "location": "/Users/lauraherburger/db-derby-10.9.1.0-bin/lib/derbyLocale_de_DE.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6bce3bf57ec01ea34b7f3483ef9bc0f9e7f6541f",
+    "jarFileModificationDate": "2013-03-01T17:25:35-08:00",
+    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "derbyLocale_it",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4187e58281c0cd969a4855559e0cbc57aa3fe94b",
+    "jarFileModificationDate": "2012-05-31T12:19:24-07:00",
+    "location": "/Users/lauraherburger/db-derby-10.9.1.0-bin/lib/derbyLocale_it.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "derbyLocale_cs",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3bfb23740e5ac10320d85eb4442f3ec961112ae9",
+    "jarFileModificationDate": "2012-05-31T12:19:22-07:00",
+    "location": "/Users/lauraherburger/db-derby-10.9.1.0-bin/lib/derbyLocale_cs.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bcd6ab898f8c739b8347e7daa8fe1de5f375b39d",
+    "jarFileModificationDate": "2013-03-01T17:08:24-08:00",
+    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "derbyLocale_zh_TW",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "84a49ad25a5e50fddda26c474dfa977d6af4be12",
+    "jarFileModificationDate": "2012-05-31T12:19:24-07:00",
+    "location": "/Users/lauraherburger/db-derby-10.9.1.0-bin/lib/derbyLocale_zh_TW.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8b6faa84e74dfc3fe6e7c7ed7f41805afdb7a5a3",
+    "jarFileModificationDate": "2013-03-01T17:18:36-08:00",
+    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4f8da5f0b2561d280a59a4414c59083dec8e0227",
+    "jarFileModificationDate": "2011-07-14T13:44:11-07:00",
+    "location": "/System/Library/Java/Extensions/jai_codec.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "34699721120eede31b7fe5140226deedc0b2aab9",
+    "jarFileModificationDate": "2011-07-14T12:43:29-07:00",
+    "location": "/System/Library/Java/Extensions/j3daudio.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "096c07686702497c46affdf25d6559ac10235884",
+    "jarFileModificationDate": "2011-07-14T13:44:11-07:00",
+    "location": "/System/Library/Java/Extensions/jai_core.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f5aa5b8c41bce1817a231e7efe6d02f95e62acab",
+    "jarFileModificationDate": "2013-03-01T17:22:56-08:00",
+    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "derbyLocale_fr",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "011ddd8faece6777e8bc69caeb37a16f42addc37",
+    "jarFileModificationDate": "2012-05-31T12:19:22-07:00",
+    "location": "/Users/lauraherburger/db-derby-10.9.1.0-bin/lib/derbyLocale_fr.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "derbyLocale_pl",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "34e9ef24b58fd67c5ec81ddda8f028639ae4db28",
+    "jarFileModificationDate": "2012-05-31T12:19:24-07:00",
+    "location": "/Users/lauraherburger/db-derby-10.9.1.0-bin/lib/derbyLocale_pl.jar",
+    "javaRuntime": false
   },
   {
     "symbolicName": "jre",
@@ -254,35 +449,22 @@
       "micro": 0,
       "qualifier": ""
     },
-    "jarFileFingerprint": "70e3f9e76e3d5884415516c0cee0855295bcb571",
-    "jarFileModificationDate": "2012-10-04T17:58:00-07:00",
-    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar",
-    "javaRuntime": true
-  },
-  {
-    "symbolicName": "jre",
-    "version": {
-      "major": 1,
-      "minor": 0,
-      "micro": 0,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "1c9b83346ea4d8df982bf46bc7cf34dbb0c889c2",
-    "jarFileModificationDate": "2012-10-04T18:07:19-07:00",
-    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar",
-    "javaRuntime": true
-  },
-  {
-    "symbolicName": "jre",
-    "version": {
-      "major": 1,
-      "minor": 0,
-      "micro": 0,
-      "qualifier": ""
-    },
     "jarFileFingerprint": "0a96b7d4126b3a5e4ac1bfb648ce0a059e03f7de",
-    "jarFileModificationDate": "2012-10-17T15:07:06-07:00",
+    "jarFileModificationDate": "2013-03-09T10:10:44-08:00",
     "location": "/System/Library/Java/Extensions/dns_sd.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0026af358a65ac5e12d8246f11c7b6762e711bde",
+    "jarFileModificationDate": "2013-03-09T10:10:43-08:00",
+    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar",
     "javaRuntime": true
   }
 ]

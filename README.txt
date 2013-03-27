@@ -1,5 +1,5 @@
 Hoard Organizer
 
-I'm just getting started on this, so there's nothing to see yet.
-Any uploads are because my computer is unstable, not because
-things work.  I just need an off-computer backup.
+Hoard Organizer uses an Apache Derby 10.9 embedded database.
+To get it to work, get the DB code from http://db.apache.org/derby/
+and make sure derby.jar is in the CLASSPATH.
