@@ -66,7 +66,7 @@ public class NewListColumn extends JPanel implements ActionListener
 		String cType = (String) type.getSelectedItem();
 		String cSize = (String) size.getSelectedItem();
 		
-		if (cName.equals(null))
+		if (cName == null)
 		{
 			return null;
 		}
@@ -110,10 +110,47 @@ public class NewListColumn extends JPanel implements ActionListener
 				return null;
 			}
 			
+			if (result.length() > 60)
+			{
+				result = result.substring(0, 59);
+			}
+			
 			result.replace("\"", "\"\"");
 		}
 		catch (NullPointerException e) {}
 		
+		return result;
+	}
+	
+	public String getType()
+	{
+		String result = null;
+		String cType = (String) type.getSelectedItem();
+		String cSize = (String) size.getSelectedItem();
+		
+		if (getText() == null)
+		{
+			return null;
+		}
+		else
+		{
+			if (cType.equals("Text"))
+			{
+				result = result + "VARCHAR (" + cSize + ")";
+			}
+			else if (cType.equals("Integer"))
+			{
+				result = result + "INTEGER";
+			}
+			else if (cType.equals("Decimal"))
+			{
+				result = result + "DOUBLE";
+			}
+			else // this should not be reached
+			{
+				return null;
+			}
+		}
 		return result;
 	}
 	

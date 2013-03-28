@@ -31,7 +31,7 @@ public class HoardOrganizer extends JFrame implements ActionListener
 	private int height;
 	private static final int INSET = 50;
 	private static final String driver = "org.apache.derby.jdbc.EmbeddedDriver";
-	private static final String dbName="dataDB";
+	public static final String dbName="dataDB";
 	private static Connection conn;
 
 	public HoardOrganizer()
@@ -181,7 +181,7 @@ public class HoardOrganizer extends JFrame implements ActionListener
 		Statement s;
 		String createString = "CREATE TABLE " + dbName +".Master_List  "
 		        + "(list_id INT NOT NULL GENERATED ALWAYS AS IDENTITY, "
-		        + " list_name VARCHAR(32) NOT NULL, " 
+		        + " list_name VARCHAR(64) NOT NULL, " 
 		        + " PRIMARY KEY(list_id))";
 		
 		// start the derby engine/driver
@@ -211,15 +211,15 @@ public class HoardOrganizer extends JFrame implements ActionListener
 			catch (SQLException sqle)
 			{
 				String theError = (sqle).getSQLState();
-			       if (theError.equals("X0Y32"))   // Table already exists
-			       {  
-			    	 // do nothing
-			       }  
-			       else 
-			       { 
-			         // unhandled SQL error
-			         throw sqle; 
-			       }
+			    if (theError.equals("X0Y32"))   // Table already exists
+			    {  
+			    	// do nothing
+			    }  
+			    else 
+			    { 
+			       // unhandled SQL error
+			       throw sqle; 
+			    }
 			}
 		}
 		catch (Throwable e)

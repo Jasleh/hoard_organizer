@@ -1,18 +1,5 @@
 [
   {
-    "symbolicName": "jre",
-    "version": {
-      "major": 1,
-      "minor": 0,
-      "micro": 0,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "c40b948a8103c939a0da54723630db9d4633c350",
-    "jarFileModificationDate": "2013-03-01T17:08:24-08:00",
-    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar",
-    "javaRuntime": true
-  },
-  {
     "symbolicName": "derbyLocale_pt_BR",
     "version": {
       "major": -1,
@@ -24,6 +11,19 @@
     "jarFileModificationDate": "2012-05-31T12:19:24-07:00",
     "location": "/Users/lauraherburger/db-derby-10.9.1.0-bin/lib/derbyLocale_pt_BR.jar",
     "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c40b948a8103c939a0da54723630db9d4633c350",
+    "jarFileModificationDate": "2013-03-01T17:08:24-08:00",
+    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar",
+    "javaRuntime": true
   },
   {
     "symbolicName": "jre",
@@ -137,9 +137,9 @@
       "micro": 0,
       "qualifier": ""
     },
-    "jarFileFingerprint": "b8d7c94811c766288d160813f4dc5b5e83c994d3",
-    "jarFileModificationDate": "2013-03-01T17:25:43-08:00",
-    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar",
+    "jarFileFingerprint": "626c83061835da5f418c5ac6b08e497f4b593b6c",
+    "jarFileModificationDate": "2012-09-12T23:53:46-07:00",
+    "location": "/System/Library/Java/Extensions/QTJava.zip",
     "javaRuntime": true
   },
   {
@@ -150,9 +150,9 @@
       "micro": 0,
       "qualifier": ""
     },
-    "jarFileFingerprint": "626c83061835da5f418c5ac6b08e497f4b593b6c",
-    "jarFileModificationDate": "2012-09-12T23:53:46-07:00",
-    "location": "/System/Library/Java/Extensions/QTJava.zip",
+    "jarFileFingerprint": "b8d7c94811c766288d160813f4dc5b5e83c994d3",
+    "jarFileModificationDate": "2013-03-01T17:25:43-08:00",
+    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar",
     "javaRuntime": true
   },
   {
@@ -312,19 +312,6 @@
     "javaRuntime": false
   },
   {
-    "symbolicName": "jre",
-    "version": {
-      "major": 1,
-      "minor": 0,
-      "micro": 0,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "bcd6ab898f8c739b8347e7daa8fe1de5f375b39d",
-    "jarFileModificationDate": "2013-03-01T17:08:24-08:00",
-    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar",
-    "javaRuntime": true
-  },
-  {
     "symbolicName": "derbyLocale_zh_TW",
     "version": {
       "major": -1,
@@ -345,9 +332,9 @@
       "micro": 0,
       "qualifier": ""
     },
-    "jarFileFingerprint": "8b6faa84e74dfc3fe6e7c7ed7f41805afdb7a5a3",
-    "jarFileModificationDate": "2013-03-01T17:18:36-08:00",
-    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar",
+    "jarFileFingerprint": "bcd6ab898f8c739b8347e7daa8fe1de5f375b39d",
+    "jarFileModificationDate": "2013-03-01T17:08:24-08:00",
+    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar",
     "javaRuntime": true
   },
   {
@@ -361,6 +348,19 @@
     "jarFileFingerprint": "4f8da5f0b2561d280a59a4414c59083dec8e0227",
     "jarFileModificationDate": "2011-07-14T13:44:11-07:00",
     "location": "/System/Library/Java/Extensions/jai_codec.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8b6faa84e74dfc3fe6e7c7ed7f41805afdb7a5a3",
+    "jarFileModificationDate": "2013-03-01T17:18:36-08:00",
+    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar",
     "javaRuntime": true
   },
   {
@@ -403,19 +403,6 @@
     "javaRuntime": true
   },
   {
-    "symbolicName": "derbyLocale_fr",
-    "version": {
-      "major": -1,
-      "minor": -1,
-      "micro": -1,
-      "qualifier": ""
-    },
-    "jarFileFingerprint": "011ddd8faece6777e8bc69caeb37a16f42addc37",
-    "jarFileModificationDate": "2012-05-31T12:19:22-07:00",
-    "location": "/Users/lauraherburger/db-derby-10.9.1.0-bin/lib/derbyLocale_fr.jar",
-    "javaRuntime": false
-  },
-  {
     "symbolicName": "derbyLocale_pl",
     "version": {
       "major": -1,
@@ -429,6 +416,19 @@
     "javaRuntime": false
   },
   {
+    "symbolicName": "derbyLocale_fr",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "011ddd8faece6777e8bc69caeb37a16f42addc37",
+    "jarFileModificationDate": "2012-05-31T12:19:22-07:00",
+    "location": "/Users/lauraherburger/db-derby-10.9.1.0-bin/lib/derbyLocale_fr.jar",
+    "javaRuntime": false
+  },
+  {
     "symbolicName": "jre",
     "version": {
       "major": 1,
@@ -436,9 +436,9 @@
       "micro": 0,
       "qualifier": ""
     },
-    "jarFileFingerprint": "0999f1f3951d713e9a0d96f063f6f6e931589cdd",
-    "jarFileModificationDate": "2011-07-14T12:43:29-07:00",
-    "location": "/System/Library/Java/Extensions/vecmath.jar",
+    "jarFileFingerprint": "0026af358a65ac5e12d8246f11c7b6762e711bde",
+    "jarFileModificationDate": "2013-03-09T10:10:43-08:00",
+    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar",
     "javaRuntime": true
   },
   {
@@ -462,9 +462,9 @@
       "micro": 0,
       "qualifier": ""
     },
-    "jarFileFingerprint": "0026af358a65ac5e12d8246f11c7b6762e711bde",
-    "jarFileModificationDate": "2013-03-09T10:10:43-08:00",
-    "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar",
+    "jarFileFingerprint": "0999f1f3951d713e9a0d96f063f6f6e931589cdd",
+    "jarFileModificationDate": "2011-07-14T12:43:29-07:00",
+    "location": "/System/Library/Java/Extensions/vecmath.jar",
     "javaRuntime": true
   }
 ]
