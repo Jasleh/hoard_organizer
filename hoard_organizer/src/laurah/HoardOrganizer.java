@@ -18,14 +18,7 @@
 
 package laurah;
 
-import javax.swing.JDesktopPane;
-import javax.swing.JMenu;
-import javax.swing.JMenuItem;
-import javax.swing.JMenuBar;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.KeyStroke;
-
+import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
 
@@ -124,14 +117,19 @@ public class HoardOrganizer extends JFrame implements ActionListener
 	
 	private void newList()
 	{
-		NewListFrame frame = new NewListFrame(conn);
-		frame.setLocation((width / 2) - (frame.WIDTH / 2), (height / 2) - (frame.HEIGHT /2));
-		frame.setVisible(true);
-		desktop.add(frame);
-		try
-		{
-			frame.setSelected(true);
-		} catch(java.beans.PropertyVetoException e) {}
+		javax.swing.SwingUtilities.invokeLater(new Runnable() {
+			public void run()
+			{
+				NewListFrame frame = new NewListFrame(conn);
+				frame.setLocation((width / 2) - (frame.WIDTH / 2), (height / 2) - (frame.HEIGHT /2));
+				frame.setVisible(true);
+				desktop.add(frame);
+				try
+				{
+					frame.setSelected(true);
+				} catch(java.beans.PropertyVetoException e) {}
+			}
+		});
 	}
 	
 	private void quit()

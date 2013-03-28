@@ -1,0 +1,29 @@
+package laurah;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class NewListColumn extends JPanel
+{
+	private JTextField name;
+	private JComboBox type;
+	private JComboBox size;
+	
+	public NewListColumn()
+	{
+		String[] types = {"Text", "Integer", "Decimal"};
+		String[] sizes = {"8", "16", "32", "64"};
+		name = new JTextField();
+		type = new JComboBox(types);
+		size = new JComboBox(sizes);
+		
+		name.setColumns(32);
+		type.setSelectedIndex(0);
+		size.setSelectedIndex(2);
+		
+		this.add(name);
+		this.add(type);
+		this.add(size);
+	}
+}
