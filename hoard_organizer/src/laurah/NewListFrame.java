@@ -34,11 +34,14 @@ public class NewListFrame extends JInternalFrame implements ActionListener
 	
 	private Border defaultTextBorder;
 	
-	public NewListFrame(Connection c)
+	private JDesktopPane desktop;
+	
+	public NewListFrame(Connection c, JDesktopPane d)
 	{
 		super("Create New List", false, true); // only close option enabled
 		
-		conn = c;;
+		conn = c;
+		desktop = d;
 		
 		// create GUI
 		this.setSize(WIDTH, HEIGHT);
@@ -75,8 +78,9 @@ public class NewListFrame extends JInternalFrame implements ActionListener
 		buttonPanel.add(clearButton);
 		
 		// layout
-		getContentPane().add(Box.createRigidArea(new Dimension(0,20)));
 		getContentPane().setLayout(new BoxLayout(getContentPane(), BoxLayout.PAGE_AXIS));
+		
+		getContentPane().add(Box.createRigidArea(new Dimension(0,20)));
 		getContentPane().add(namePanel);
 		getContentPane().add(Box.createRigidArea(new Dimension(0,10)));
 		getContentPane().add(columnLabel);
@@ -98,10 +102,21 @@ public class NewListFrame extends JInternalFrame implements ActionListener
 			if (createTable())
 			{
 				// table created, close frame and open viewer frame
-				
-				JOptionPane.showMessageDialog(getContentPane(), 
-						"Table Created", 
-						"Test", JOptionPane.INFORMATION_MESSAGE);
+				javax.swing.SwingUtilities.invokeLater(new Runnable() {
+					public void run()
+					{
+						ViewListFrame frame = new ViewListFrame(conn, listName.getText());
+						frame.setLocation((desktop.getWidth() / 2) - (ViewListFrame.WIDTH / 2),
+								(desktop.getHeight() / 2) - (ViewListFrame.HEIGHT /2));
+						frame.setVisible(true);
+						desktop.add(frame);
+						try
+						{
+							frame.setSelected(true);
+						} catch(java.beans.PropertyVetoException e) {}
+					}
+				});
+				this.dispose();
 			}
 		}
 		else if ("clear".equals(e.getActionCommand()))

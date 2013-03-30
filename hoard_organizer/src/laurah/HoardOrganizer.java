@@ -106,7 +106,7 @@ public class HoardOrganizer extends JFrame implements ActionListener
 		}
 		else if ("open".equals(e.getActionCommand()))
 		{
-			// open existing list
+			openList();
 		}
 		else // "quit"
 		{
@@ -120,8 +120,25 @@ public class HoardOrganizer extends JFrame implements ActionListener
 		javax.swing.SwingUtilities.invokeLater(new Runnable() {
 			public void run()
 			{
-				NewListFrame frame = new NewListFrame(conn);
-				frame.setLocation((width / 2) - (frame.WIDTH / 2), (height / 2) - (frame.HEIGHT /2));
+				NewListFrame frame = new NewListFrame(conn, desktop);
+				frame.setLocation((width / 2) - (NewListFrame.WIDTH / 2), (height / 2) - (NewListFrame.HEIGHT /2));
+				frame.setVisible(true);
+				desktop.add(frame);
+				try
+				{
+					frame.setSelected(true);
+				} catch(java.beans.PropertyVetoException e) {}
+			}
+		});
+	}
+	
+	private void openList()
+	{
+		javax.swing.SwingUtilities.invokeLater(new Runnable() {
+			public void run()
+			{
+				OpenListFrame frame = new OpenListFrame(conn, desktop);
+				frame.setLocation((width / 2) - (OpenListFrame.WIDTH / 2), (height / 2) - (OpenListFrame.HEIGHT /2));
 				frame.setVisible(true);
 				desktop.add(frame);
 				try

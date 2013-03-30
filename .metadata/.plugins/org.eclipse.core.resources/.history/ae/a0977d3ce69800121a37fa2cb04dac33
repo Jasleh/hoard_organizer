@@ -1,0 +1,109 @@
+package laurah;
+
+import javax.swing.*;
+
+import java.awt.event.*;
+import java.awt.*;
+import java.sql.*;
+
+public class OpenListFrame extends JInternalFrame implements ActionListener
+{
+	public static final int HEIGHT = 300;
+	public static final int WIDTH = 400;
+	
+	private Connection conn;
+	private JDesktopPane desktop;
+	
+	public OpenListFrame(Connection c, JDesktopPane d)
+	{
+		super("Open a List", false, true); // only close option enabled
+		
+		conn = c;
+		desktop = d;
+		String [] lists = new String[1];	// initialized so compiler doesn't complain
+		Statement s = null;
+		ResultSet rs = null;
+		String query;
+		int i = 0;
+		boolean listsExist = true;
+		JComboBox listComboBox;
+		JButton openButton = new JButton("Open");
+		
+		// get list names from DB
+		try
+		{
+			query = "SELECT COUNT(*) FROM " + HoardOrganizer.dbName + ".Master_List";
+			
+			s = conn.createStatement();
+			rs = s.executeQuery(query);
+			
+			if (rs.next())
+			{
+				i = rs.getInt(1);
+			}
+			
+			if (i == 0)
+			{
+				// no lists currently exist - need to make one first
+				listsExist = false;
+			}
+			else
+			{
+				lists = new String[i];
+				i = 0;
+				
+				query = "SELECT list_name FROM " + HoardOrganizer.dbName + ".Master_List "
+						+ "ORDER BY list_name";
+				
+				rs = s.executeQuery(query);
+				
+				while (rs.next() && i < lists.length)
+				{
+					lists[i] = rs.getString(1);
+					++i;
+				}
+				
+				rs.close();
+				s.close();
+			}
+		}
+		catch (SQLException sqle)
+		{
+			JOptionPane.showMessageDialog(null, 
+					"An Error Occurred", 
+					"Error", JOptionPane.ERROR_MESSAGE);
+			System.exit(0);
+		}
+		
+		// create GUI
+		
+		this.setSize(WIDTH, HEIGHT);
+				
+		// components
+		if (listsExist)
+		{
+			listComboBox = new JComboBox(lists);
+		}
+		else
+		{
+			listComboBox = new JComboBox();
+			openButton.setEnabled(false);
+		}
+		
+		openButton.addActionListener(this);
+		
+		// layout
+		getContentPane().setLayout(new BoxLayout(getContentPane(), BoxLayout.PAGE_AXIS));
+		
+		getContentPane().add(Box.createRigidArea(new Dimension(0,20)));
+		getContentPane().add(listComboBox);
+		getContentPane().add(Box.createRigidArea(new Dimension(0,20)));
+		getContentPane().add(openButton);
+		getContentPane().add(Box.createRigidArea(new Dimension(0,75)));
+	}
+	
+	public void actionPerformed(ActionEvent e) 
+	{
+		
+	}
+}

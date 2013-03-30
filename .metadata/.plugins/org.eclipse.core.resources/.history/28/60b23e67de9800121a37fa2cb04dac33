@@ -1,0 +1,34 @@
+package laurah;
+
+import javax.swing.*;
+
+import java.awt.event.*;
+import java.awt.*;
+import java.sql.*;
+
+public class OpenListFrame extends JInternalFrame implements ActionListener
+{
+	public static final int HEIGHT = 300;
+	public static final int WIDTH = 400;
+	
+	private Connection conn;
+	private JDesktopPane desktop;
+	
+	public OpenListFrame(Connection c, JDesktopPane d)
+	{
+		super("Open a List", false, true); // only close option enabled
+		
+		conn = c;
+		desktop = d;
+		
+		// create GUI
+		this.setSize(WIDTH, HEIGHT);
+				
+		// components
+	}
+	
+	public void actionPerformed(ActionEvent e) 
+	{
+		
+	}
+}
