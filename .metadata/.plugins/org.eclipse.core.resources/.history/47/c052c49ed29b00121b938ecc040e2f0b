@@ -531,15 +531,6 @@ public class ViewListFrame extends JInternalFrame implements ActionListener, Lis
 	{
 		clearValues();
 		listTable.clearSelection();
-		
-		addChangeButton.setText("Add");
-		addChangeButton.setActionCommand("add");
-		
-		clearDeleteButton.setText("Clear");
-		clearDeleteButton.setActionCommand("clear");
-		
-		clearSelectionButton.setVisible(false);
-		clearSelectionButton.setEnabled(false);
 	}
 	
 	private void deleteList()

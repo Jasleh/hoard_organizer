@@ -291,54 +291,20 @@ public class ViewListFrame extends JInternalFrame implements ActionListener, Lis
 	// row selected actions
 	public void valueChanged(ListSelectionEvent e) 
 	{
-		// return if nothing selected
-		if (listTable.getSelectedRow() == -1)
-		{
-			return;
-		}
-		
-		// fill in edit fields with the selected row's values
+		// TODO fill in edit fields with the selected row's values
 		int row = listTable.convertRowIndexToModel(listTable.getSelectedRow());
 		int cols = tableModel.getColumnCount();
 		int i = 1;
 		
 		idTextField.setText((String) tableModel.getValueAt(row, 0));
 		
-		if (i < cols)
+		if (i <= cols)
 		{
-			one.setValue((String) tableModel.getValueAt(row, i));
-			++i;
-		}
-		if (i < cols)
-		{
-			two.setValue((String) tableModel.getValueAt(row, i));
-			++i;
-		}
-		if (i < cols)
-		{
-			three.setValue((String) tableModel.getValueAt(row, i));
-			++i;
-		}
-		if (i < cols)
-		{
-			four.setValue((String) tableModel.getValueAt(row, i));
-			++i;
-		}
-		if (i < cols)
-		{
-			five.setValue((String) tableModel.getValueAt(row, i));
-			++i;
+			
 		}
 		
-		// change buttons
-		addChangeButton.setText("Change Row");
-		addChangeButton.setActionCommand("change");
+		// TODO change buttons
 		
-		clearDeleteButton.setText("Delete Row");
-		clearDeleteButton.setActionCommand("delete");
-		
-		clearSelectionButton.setVisible(true);
-		clearSelectionButton.setEnabled(true);
 	}
 	
 	private void addRow()
@@ -529,17 +495,7 @@ public class ViewListFrame extends JInternalFrame implements ActionListener, Lis
 	
 	private void clearSelection()
 	{
-		clearValues();
-		listTable.clearSelection();
-		
-		addChangeButton.setText("Add");
-		addChangeButton.setActionCommand("add");
-		
-		clearDeleteButton.setText("Clear");
-		clearDeleteButton.setActionCommand("clear");
-		
-		clearSelectionButton.setVisible(false);
-		clearSelectionButton.setEnabled(false);
+		// TODO clear selection
 	}
 	
 	private void deleteList()

@@ -205,41 +205,4 @@ public class ViewListColumn extends JPanel
 			decimalType.setValue(null);
 		}
 	}
-	
-	public void setValue(String v)
-	{
-		if (textType.isEnabled())
-		{
-			if (v == null)
-			{
-				textType.setText("");
-			}
-			else
-			{
-				textType.setText(v);
-			}
-		}
-		else if (integerType.isEnabled())
-		{
-			if (v == null)
-			{
-				integerType.setValue(null);
-			}
-			else
-			{
-				integerType.setValue(Integer.parseInt(v));
-			}
-		}
-		else if (decimalType.isEnabled())
-		{
-			if (v == null)
-			{
-				decimalType.setValue(null);
-			}
-			else
-			{
-				decimalType.setValue(Double.parseDouble(v));
-			}
-		}
-	}
 }
