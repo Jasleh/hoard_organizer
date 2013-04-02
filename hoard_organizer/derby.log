@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Tue Apr 02 13:19:32 PDT 2013:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-013d-cc67-91eb-0000046ec648 
+Tue Apr 02 15:56:42 PDT 2013:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-013d-ccf7-75cc-0000046ec648 
 on database directory /Users/lauraherburger/hoard_organizer/hoard_organizer/dataDB  with class loader sun.misc.Launcher$AppClassLoader@69cd2e5f 
 Loaded from file:/Users/lauraherburger/db-derby-10.9.1.0-bin/lib/derby.jar
 java.vendor=Apple Inc.
@@ -9,8 +9,8 @@ user.dir=/Users/lauraherburger/hoard_organizer/hoard_organizer
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''
 ----------------------------------------------------------------
-Tue Apr 02 13:20:28 PDT 2013: Shutting down Derby engine
+Tue Apr 02 15:59:12 PDT 2013: Shutting down Derby engine
 ----------------------------------------------------------------
-Tue Apr 02 13:20:28 PDT 2013:
-Shutting down instance a816c00e-013d-cc67-91eb-0000046ec648 on database directory /Users/lauraherburger/hoard_organizer/hoard_organizer/dataDB with class loader sun.misc.Launcher$AppClassLoader@69cd2e5f 
+Tue Apr 02 15:59:12 PDT 2013:
+Shutting down instance a816c00e-013d-ccf7-75cc-0000046ec648 on database directory /Users/lauraherburger/hoard_organizer/hoard_organizer/dataDB with class loader sun.misc.Launcher$AppClassLoader@69cd2e5f 
 ----------------------------------------------------------------
