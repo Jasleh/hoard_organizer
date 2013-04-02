@@ -724,43 +724,7 @@ public class ViewListFrame extends JInternalFrame implements ActionListener, Lis
 	
 	private void deleteList()
 	{
-		// confirmation dialog
-		int n = JOptionPane.showConfirmDialog(null,
-			    "Are you sure you want to delete this list?",
-			    "Please Confirm",
-			    JOptionPane.YES_NO_OPTION);
-		
-		if (n == JOptionPane.NO_OPTION)
-		{
-			return;
-		}
-		
-		String deleteString = "DROP TABLE " + HoardOrganizer.dbName + ".\"" + listName + "\"";
-		
-		try 
-		{
-			tableModel.getListResultSet().close();
-			
-			// delete table
-			Statement s = conn.createStatement();
-			s.executeUpdate(deleteString);
-			
-			// remove supporting tables/entries
-			deleteString = "DROP TABLE " + HoardOrganizer.dbName + ".\"" + listName + " ref\"";
-			s.executeUpdate(deleteString);
-			
-			deleteString = "DELETE FROM " + HoardOrganizer.dbName + ".Master_List WHERE list_name = '" + listName + "'";
-			s.executeUpdate(deleteString);
-		} 
-		catch (SQLException sqle) 
-		{
-			JOptionPane.showMessageDialog(null, 
-					"An Error Occurred", 
-					"Error", JOptionPane.ERROR_MESSAGE);
-			System.exit(0);
-		}
-		
-		this.dispose();
+		// TODO delete list
 	}
 
 }

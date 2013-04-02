@@ -741,15 +741,7 @@ public class ViewListFrame extends JInternalFrame implements ActionListener, Lis
 		{
 			tableModel.getListResultSet().close();
 			
-			// delete table
 			Statement s = conn.createStatement();
-			s.executeUpdate(deleteString);
-			
-			// remove supporting tables/entries
-			deleteString = "DROP TABLE " + HoardOrganizer.dbName + ".\"" + listName + " ref\"";
-			s.executeUpdate(deleteString);
-			
-			deleteString = "DELETE FROM " + HoardOrganizer.dbName + ".Master_List WHERE list_name = '" + listName + "'";
 			s.executeUpdate(deleteString);
 		} 
 		catch (SQLException sqle) 
