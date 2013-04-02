@@ -674,37 +674,7 @@ public class ViewListFrame extends JInternalFrame implements ActionListener, Lis
 	
 	private void deleteRow()
 	{
-		String deleteString = "DELETE FROM " + HoardOrganizer.dbName + ".\"" + listName
-				+ "\" WHERE item_id = " + Integer.parseInt(idTextField.getText());
-		
-		try
-		{
-			Statement s = conn.createStatement();
-			s.executeUpdate(deleteString);
-			
-			clearSelection();
-			
-			// update table
-			s = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
-			ResultSet rs = s.executeQuery(getTableString);
-			
-			tableModel = new ListTableModel(rs);
-			
-			javax.swing.SwingUtilities.invokeLater(new Runnable() {
-				public void run()
-				{
-					listTable.setModel(tableModel);
-					listTable.invalidate();
-				}
-			});
-		}
-		catch (SQLException sqle)
-		{
-			JOptionPane.showMessageDialog(null, 
-					"An Error Occurred", 
-					"Error", JOptionPane.ERROR_MESSAGE);
-			System.exit(0);
-		}
+		// TODO delete row
 	}
 	
 	private void clearSelection()
