@@ -5,4 +5,9 @@
 <fullyQualifiedTypeName name="javax.swing.GroupLayout.Alignment"/>
 <fullyQualifiedTypeName name="javax.swing.border.Border"/>
 <fullyQualifiedTypeName name="javax.sql.rowset.CachedRowSet"/>
+<fullyQualifiedTypeName name="javax.swing.text.MaskFormatter"/>
+<fullyQualifiedTypeName name="java.awt.Component"/>
+<fullyQualifiedTypeName name="java.text.NumberFormat"/>
+<fullyQualifiedTypeName name="javax.sql.RowSetListener"/>
+<fullyQualifiedTypeName name="javax.swing.event.ListSelectionListener"/>
 </qualifiedTypeNameHistroy>
