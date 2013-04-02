@@ -1,0 +1,7 @@
+package laurah;
+
+import javax.swing.table.AbstractTableModel;
+
+public class ListTableModel extends AbstractTableModel {
+
+}

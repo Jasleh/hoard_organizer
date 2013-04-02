@@ -4,4 +4,5 @@
 <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 <fullyQualifiedTypeName name="javax.swing.GroupLayout.Alignment"/>
 <fullyQualifiedTypeName name="javax.swing.border.Border"/>
+<fullyQualifiedTypeName name="javax.sql.rowset.CachedRowSet"/>
 </qualifiedTypeNameHistroy>

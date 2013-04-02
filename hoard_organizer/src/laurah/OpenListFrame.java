@@ -1,3 +1,21 @@
+/*
+ *  Hoard Organizer - a program to keep track of stuff
+ *  Copyright (C) 2012  Laura Herburger
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *  
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package laurah;
 
 import javax.swing.*;
@@ -24,7 +42,9 @@ public class OpenListFrame extends JInternalFrame implements ActionListener
 		
 		conn = c;
 		desktop = d;
-		String [] lists = new String[1];	// initialized so compiler doesn't complain
+		openButton = new JButton("Open");
+		panel = new JPanel();
+		listComboBox = new JComboBox();
 		Statement s = null;
 		ResultSet rs = null;
 		String query;
@@ -38,36 +58,26 @@ public class OpenListFrame extends JInternalFrame implements ActionListener
 			
 			s = conn.createStatement();
 			rs = s.executeQuery(query);
-			
-			if (rs.next())
+				
+			query = "SELECT list_name FROM " + HoardOrganizer.dbName + ".Master_List "
+					+ "ORDER BY list_name";
+				
+			rs = s.executeQuery(query);
+				
+			while (rs.next())
 			{
-				i = rs.getInt(1);
+				listComboBox.addItem(rs.getString(1));
+				++i;
 			}
 			
 			if (i == 0)
 			{
-				// no lists currently exist - need to make one first
 				listsExist = false;
 			}
-			else
-			{
-				lists = new String[i];
-				i = 0;
 				
-				query = "SELECT list_name FROM " + HoardOrganizer.dbName + ".Master_List "
-						+ "ORDER BY list_name";
-				
-				rs = s.executeQuery(query);
-				
-				while (rs.next() && i < lists.length)
-				{
-					lists[i] = rs.getString(1);
-					++i;
-				}
-				
-				rs.close();
-				s.close();
-			}
+			rs.close();
+			s.close();
+		
 		}
 		catch (SQLException sqle)
 		{
@@ -82,17 +92,9 @@ public class OpenListFrame extends JInternalFrame implements ActionListener
 		this.setSize(WIDTH, HEIGHT);
 				
 		// components
-
-		openButton = new JButton("Open");
-		panel = new JPanel();
 	
-		if (listsExist)
+		if (!listsExist)
 		{
-			listComboBox = new JComboBox(lists);
-		}
-		else
-		{
-			listComboBox = new JComboBox();
 			openButton.setEnabled(false);
 		}
 		
@@ -127,9 +129,7 @@ public class OpenListFrame extends JInternalFrame implements ActionListener
 			javax.swing.SwingUtilities.invokeLater(new Runnable() {
 				public void run()
 				{
-					ViewListFrame frame = new ViewListFrame(conn, (String) listComboBox.getSelectedItem());
-					frame.setLocation((desktop.getWidth() / 2) - (ViewListFrame.WIDTH / 2),
-							(desktop.getHeight() / 2) - (ViewListFrame.HEIGHT /2));
+					ViewListFrame frame = new ViewListFrame(conn, (String) listComboBox.getSelectedItem(), desktop);
 					frame.setVisible(true);
 					desktop.add(frame);
 					try

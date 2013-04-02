@@ -43,6 +43,7 @@ public class HoardOrganizer extends JFrame implements ActionListener
 		width = screenSize.width - (INSET * 2);
 		height = screenSize.height - (INSET * 2);
 		setBounds(INSET, INSET, width, height);
+		setResizable(false);
 		
 		// set up GUI
 		desktop = new JDesktopPane();
